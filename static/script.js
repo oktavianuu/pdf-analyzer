@@ -80,10 +80,10 @@ const populateBotResponse = async (userMessage) => {
   let uploadButtonHtml = '';
 
   if (isFirstMessage) {
-    response = { botResponse: "Hello there! I'm your friendly data assistant, ready to answer any questions regarding your data. Could you please upload a PDF file for me to analyze?"};
+    response = { botResponse: "Upload pdf to be analyzed!"};
     uploadButtonHtml = `
         <input type="file" id="file-upload" accept=".pdf" hidden>
-        <button id="upload-button" class="btn btn-primary btn-sm">Upload File</button>
+        <button id="upload-button" class="btn btn-primary btn-sm">Upload pdf File</button>
     `;
 
   } else {
